@@ -19,6 +19,7 @@ app.use(cors(corsOptions));
 // api routes
 app.use("/api/cars", carsRoutes);
 
+// connect to ur db and start serever
 const startServer = async () => {
   try {
     await testConnection();
